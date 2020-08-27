@@ -2343,3 +2343,8 @@ input, select, textarea {
 	  width: 100%;
 	  max-width:900px;
 	}
+	
+	.donate-list li {
+		display: inline-block;
+		margin: 6px 6px;
+	}
