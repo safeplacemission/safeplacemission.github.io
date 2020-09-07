@@ -119,43 +119,43 @@
 						.scrollex({
 							top:		'30vh',
 							bottom:		'30vh',
-							delay:		50,
+							delay:		25,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
 							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
+							//leave:		function() { $(this).addClass('inactive'); }
 						});
 
 				// Generic sections.
 					$('.main.style1')
 						.scrollex({
 							mode:		'middle',
-							delay:		100,
+							delay:		50,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
 							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
+							//leave:		function() { $(this).addClass('inactive'); }
 						});
 
 					$('.main.style2')
 						.scrollex({
 							mode:		'middle',
-							delay:		100,
+							delay:		50,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
 							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
+							//leave:		function() { $(this).addClass('inactive'); }
 						});
 
 				// Contact.
 					$('#contact')
 						.scrollex({
 							top:		'50%',
-							delay:		50,
+							delay:		25,
 							initialize:	function() { $(this).addClass('inactive'); },
 							terminate:	function() { $(this).removeClass('inactive'); },
 							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
+							//leave:		function() { $(this).addClass('inactive'); }
 						});
 
 			};

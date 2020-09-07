@@ -589,6 +589,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
 		color: #98c593;
+		text-decoration: none;
 	}
 
 	sub {
@@ -1449,6 +1450,7 @@ input, select, textarea {
 			.gallery article .image {
 				margin: 0;
 				display: block;
+				margin: 0 0 1em 0;
 			}
 
 			.gallery article:nth-last-child(1n) {
@@ -1850,7 +1852,6 @@ input, select, textarea {
 
 			#header h1 a {
 				font-size: 1.25em;
-
 			}
 
 		#header nav {
@@ -1887,6 +1888,10 @@ input, select, textarea {
 		.header-language {
 			display: none;
 		}
+		
+		.current-page {
+			border-bottom: 2px solid #39454b;
+		}
 
 		@media screen and (max-width: 736px) {
 
@@ -1906,6 +1911,7 @@ input, select, textarea {
 
 					#header h1 a {
 						font-size: 1em;
+						text-decoration: none;
 					}
 
 			.header-full {
