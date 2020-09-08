@@ -1892,8 +1892,18 @@ input, select, textarea {
 		.current-page {
 			border-bottom: 2px solid #39454b;
 		}
+		
+		.iframe-fb-button {
+			display: none;
+		}
 
 		@media screen and (max-width: 736px) {
+			.iframe-fb-button {
+				display: block; 
+			}
+			.iframe-fb-page {
+				display: none;
+			}
 
 			#header {
 				height: 2.5em;
