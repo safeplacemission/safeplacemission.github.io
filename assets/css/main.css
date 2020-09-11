@@ -2507,4 +2507,21 @@ input, select, textarea {
 		text-align: justify;
 		margin: 50px 5px 50px 5px;
 	}
+	
+	ul.thanks {
+		cursor: default;
+	}
+
+	ul.thanks li {
+		display: inline-block;
+		font-size: 30px;
+	}
+
+	ul.thanks a {
+		padding: 15px;
+		width: 2em;
+		height: 2em;
+		line-height: 2em;
+		border: 0;
+	}
 		
