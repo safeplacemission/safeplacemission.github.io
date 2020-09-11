@@ -2391,7 +2391,7 @@ input, select, textarea {
 		display: flex; 
 		margin: auto;
 		text-align: center;
-		background-image: linear-gradient(to right, black, #39454b);
+		background-image: linear-gradient(to right, black 40%, #39454b);
 	}
 	
 		.video-wrap {
@@ -2400,7 +2400,7 @@ input, select, textarea {
 		  min-width: 60%;
 		  max-width:840px;
 		  margin: auto;
-		  padding: 2px;
+		  
 		}
 
 			.video-container {
@@ -2409,7 +2409,9 @@ input, select, textarea {
 			  height: 0;
 			  max-width: 840px;
 			  padding-bottom: 56.25%;
-			  background-color:black;
+			  background: url("images/overlay.png"), url("../../images/one.jpg");
+			  background-size: 256px 256px, cover;
+			  background-position: top left, center center;
 			}
 
 			.video-container object, .video-container embed {
@@ -2454,6 +2456,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 		.project-container {
 			display: inline-block; 
+			background-image: linear-gradient(to bottom, black 40%, #39454b);
 		}
 	}
 
