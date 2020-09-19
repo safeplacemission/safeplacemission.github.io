@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fs.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -664,6 +664,8 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
 		background-color: #98c593;
+		background: rgb(113,180,105);
+		background: linear-gradient(0deg, rgba(113,180,105,1) 0%, rgba(152,197,147,1) 100%);
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -740,8 +742,9 @@ input, select, textarea {
 		.button.style2,
 		button.style2 {
 			background-color: transparent;
+			background: transparent;
 			border: solid 2px #e5e6e7;
-			color: inherit;
+			color: inherit;	
 		}
 
 			input[type="button"].style2:hover,
@@ -1468,10 +1471,10 @@ input, select, textarea {
 	}
 
 		.gallery article {
-			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-			transition: transform 1s ease, opacity 1s ease;
+			-moz-transition: -moz-transform 0.75s ease, opacity 1.5s ease;
+			-webkit-transition: -webkit-transform 0.75s ease, opacity 1.5s ease;
+			-ms-transition: -ms-transform 0.75s ease, opacity 1.5s ease;
+			transition: transform 0.75s ease, opacity 1.5s ease;
 			-moz-transform: translateX(0);
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
@@ -1485,6 +1488,10 @@ input, select, textarea {
 				margin: 0;
 				display: block;
 				margin: 0 0 1em 0;
+			}
+			
+			.gallery article p {
+				margin: 0 0.5em 0.5em 0.5em;	
 			}
 
 			.gallery article:nth-last-child(1n) {
@@ -1857,7 +1864,10 @@ input, select, textarea {
 				.gallery article {
 					width: 100%;
 				}
-
+				
+				.gallery article p {
+					margin: 0 0 0.5em 0;
+				}
 		}
 
 /* Header */
@@ -2088,10 +2098,10 @@ input, select, textarea {
 		}
 
 			.main.style2 > .content {
-				-moz-transition: -moz-transform 1s ease;
-				-webkit-transition: -webkit-transform 1s ease;
-				-ms-transition: -ms-transform 1s ease;
-				transition: transform 1s ease;
+				-moz-transition: -moz-transform 0.75s ease;
+				-webkit-transition: -webkit-transform 0.75s ease;
+				-ms-transition: -ms-transform 0.75s ease;
+				transition: transform 0.75s ease;
 				-moz-transform: translateZ(0);
 				-webkit-transform: translateZ(0);
 				-ms-transform: translateZ(0);
@@ -2360,6 +2370,10 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
+	
+	#team, #work {
+		background-color: inherit;
+	}
 
 /* Contact */
 
@@ -2462,6 +2476,7 @@ input, select, textarea {
 			float: right;
 			padding: 20px;
 			min-width: 200px;
+			background-color: inherit;
 		}
 		.project-info p {
 			text-align: justify;
@@ -2506,6 +2521,7 @@ input, select, textarea {
 	#donate-details {
 		text-align: justify;
 		margin: 50px 5px 50px 5px;
+		background-color: inherit;
 	}
 	
 	ul.thanks {
