@@ -47,6 +47,7 @@
 					<!-- <li><a href="#english"><i class="fas fa-globe-americas"></i> English</a></li> -->
 				</ul>
 			</nav>	
+			<a id="float-menu" href="donate.html"><i class="fas fa-heart my-float"></i> Doe agora</a>
 		</header>
 		
 		<!-- Video -->
@@ -61,7 +62,7 @@
 				<header><h2> Projeto Lar Seguro</h2>
 				<i style="color: lightgrey"><i class="fas fa-map-marker-alt" style="font-size: 15px; color: darkgrey"></i>&nbsp Kampot, Cambodia</i></header>
 				<p>A <b>Safe Home (Lar Seguro)</b> é um orfanato para crianças localizado em Kampot, no interior do Camboja.
-				Nós acolhemos crianças de famílias não possuem suporte emocional e financeiro para sustentá-las 
+				Nós acolhemos crianças de famílias que não possuem suporte emocional e financeiro para sustentá-las 
 				e mantê-las em segurança de abusos e exploração sexual.</p>
 				<a href="donate.html" class="button">Doe agora</a>
 			</div>
@@ -73,7 +74,7 @@
 				<div class="gallery">
 					<header><h3>Qual é o trabalho realizado pelo projeto?</h3></header>
 					
-					<p>Com apoio de ONGs parceiras e indicações, resgatamos criancas que vivem em situação de risco para morar 
+					<p>Com apoio de ONGs parceiras e indicações, resgatamos crianças que vivem em situação de risco para morar 
 					na Safe Home até se formarem. Atualmente nosso espaço tem capacidade para até 30 crianças.</p>
 						
 					<article><img class="image fit" style="padding: 4px 4px" src="images/thumbs/02.jpg" title="The Anonymous Red" alt="" /></article>
@@ -158,8 +159,15 @@
 				});
 			})();
 		</script>
-		
-		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="zNHyOLLO"></script>
-
+		<script> <!-- Show/Hide Mobile Donate Button -->
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+			  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("float-menu").style.bottom = "0px";
+			  } else {
+				document.getElementById("float-menu").style.bottom = "-50px";
+			  }
+			}
+		</script>
 	</body>
 </html>

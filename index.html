@@ -33,7 +33,6 @@
 		<meta property="og:description" content="Combatemos o impacto da violência e abusos contra crianças no Camboja."/>
 	</head>
 	<body class="is-preload">
-
 		<!-- Header -->
 		<header id="header">
 			<div class="header-title"><a href="index.html"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
@@ -47,8 +46,9 @@
 					<!-- <li><a href="#english"><i class="fas fa-globe-americas"></i> English</a></li> -->
 				</ul>
 			</nav>	
+			<a id="float-menu" href="donate.html"><i class="fas fa-heart my-float"></i> Doe agora</a>
 		</header>
-
+		
 		<!-- Intro -->
 		<section id="intro" class="main style1 dark fullscreen">
 			<div class="content">
@@ -56,7 +56,8 @@
 				<p style="text-shadow: 0px 0px 3px grey;">Resgatar e transformar <strong>vidas</strong> no Camboja</p>
 				<footer>
 				<ul class="button-list" style="margin: auto;">
-						<li><a href="donate.html" class="button style1">Doe agora</a></li>
+						<li><a href="donate.html" class="button style1" id="donate-button">Doe agora</a></li>
+						<li><a href="safehome.html" class="button style2">Projeto Safe Home</a></li>
 						<li><a href="#team" class="button style2">Saiba mais</a></li>
 					</ul>
 				</footer>
@@ -72,7 +73,7 @@
 						<p>Somos <b>Flávio de Souza</b> e <b>Quésede Éger</b>, brasileiros e cristãos. Após anos atuando
 						em projetos sociais no Brasil, nos mudamos para o Camboja em 2016 para dedicar nossas 
 						vidas no combate à violência e abusos contra crianças.</p>
-						<a href="#mission" class="button">Saiba mais</a>
+						<p>Saiba mais sobre nossa <b><a href="#mission">missão</a></b> e <b><a href="#work">projetos</a></b>.</p>
 					</article>
 				</div>
 			</div>
@@ -81,10 +82,11 @@
 		<!-- Purpose -->
 		<section id="mission" class="main style2 right fullscreen">
 			<div class="content box style2">
-				<p>O <b>Camboja</b> é um país do Sudeste Asiático que possui uma enorme desestruturação humana e social. 
-				É muito comum ver crianças vitimas de abusos e prostuição infantil, além de viver sem carinho, educação e um alimento digno.</p> 
-				<p>Nossa ONG atua com famílias em situações de risco para que estas crianças recebam amor, 
-				um futuro próspero, e possam espalhar essa mudança no país.</p>
+				<p>O <b>Camboja</b> é um país do Sudeste Asiático que possui uma enorme desestruturação humana e social.
+				Embora o governo realize ações para combater abusos e a prostituição infantil, crianças são vítimas 
+				todos os dias, além de viver sem carinho, educação e um alimento digno.</p> 
+				<p>A <b>Safe Place Mission</b> é uma ONG que atua com famílias em situações de risco para que estas crianças recebam amor, 
+				um futuro próspero, e possam espalhar essa mudança pelo país.</p>
 				<p>Conheça mais sobre os <b><a href="#work">nossos projetos</a></b>.</p>
 			</div>
 
@@ -141,6 +143,16 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
+		<script> <!-- Show/Hide Mobile Donate Button -->
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+				if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+					document.getElementById("float-menu").style.bottom = "0px";
+				} else {
+					document.getElementById("float-menu").style.bottom = "-50px";
+				}
+			}
+		</script>
+		
 	</body>
 </html>
