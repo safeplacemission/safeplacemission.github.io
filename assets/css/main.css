@@ -2383,11 +2383,11 @@ input, select, textarea {
 /* Home Page */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background: url("images/overlay.png");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: fixed;
+		background-repeat: repeat;
 	}
 
 	#mission {
@@ -2407,6 +2407,16 @@ input, select, textarea {
 	#team, #work {
 		background-color: inherit;
 	}	
+	
+	#bgvid {
+		object-fit: cover;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index:-1;
+	}
 
 /* Contact */
 
