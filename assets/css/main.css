@@ -2382,12 +2382,19 @@ input, select, textarea {
 
 /* Home Page */
 
-	#intro {
+/* 	#intro {
 		background: url("images/overlay.png");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: fixed;
 		background-repeat: repeat;
+	}
+ */	
+	#intro {
+		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
 	}
 
 	#mission {
