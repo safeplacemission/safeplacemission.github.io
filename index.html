@@ -64,16 +64,6 @@
 			</div>
 
 
-			<video id="bgvid" playsinline autoplay muted loop preload="auto" poster="images/intro.jpg">
-			  <source src="images/bgvid.mp4" type="video/mp4">
-			</video>
-			<script>
-				var video = document.getElementById("bgvid");
-				video.addEventListener('loadedmetadata', function() {
-					if (video.buffered.length === 0) return;
-					var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
-				  });
-			</script>
 		</section>
 
 		<!-- Team -->
@@ -165,6 +155,16 @@
 				}
 			}
 		</script>
-		
 	</body>
+			<video id="bgvid" playsinline autoplay muted loop preload="auto" poster="images/intro.jpg">
+			  <source src="images/bgvid.mp4" type="video/mp4">
+			</video>
+			<script>
+				var video = document.getElementById("bgvid");
+				video.addEventListener('loadedmetadata', function() {
+					if (video.buffered.length === 0) return;
+					var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
+				  });
+			</script>
+
 </html>
