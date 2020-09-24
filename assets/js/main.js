@@ -25,6 +25,9 @@
 		$window.on('load', function() {
 			setTimeout(function() {
 				$body.removeClass('is-preload');
+				if($("#bgvid-area").length != 0) {
+					$('#bgvid-area').append('<video id="bgvid" autoplay loop muted> <source src="images/bgvid.mp4" type="video/mp4" /> </video>')
+				}
 			}, 100);
 		});
 
