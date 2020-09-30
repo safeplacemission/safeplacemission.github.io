@@ -797,6 +797,22 @@ input, select, textarea {
 		.button.style4:hover, button.style4:hover { opacity: 75%; }
 		.button.style4:active, button.style4:active { opacity: 85%; }
 		
+		.button.style5, button.style5 {
+			background-color: transparent;
+			background: transparent;
+			border: solid 2px #e5e6e7;
+			color: inherit;	
+			min-width: 70px;
+			height: 45px;
+			font-size: 16px;
+			padding-left: 12px;
+			padding-right: 12px;
+			padding-top: 8px;
+			line-height: 25px;
+		}
+		.button.style5:hover, button.style5:hover { background-color: lightgreen; opacity: 75%; }
+		.button.style5:active, button.style5:active { background-color: lightgreen; opacity: 85%; }
+		
 
 /* Form */
 
@@ -2418,6 +2434,16 @@ input, select, textarea {
 	#team, #work {
 		background-color: inherit;
 	}	 
+	
+	.side-description {
+		margin-top: 20px;
+	}
+		
+	@media screen and (max-width: 736px) {
+		.side-description {
+			margin-top: 0;
+		}
+	}
 
 /* Contact */
 
@@ -2497,11 +2523,7 @@ input, select, textarea {
 			  height: 0;
 			  max-width: 840px;
 			  padding-bottom: 56.25%;
-/* 			  background: url("images/overlay.png"), url("../../images/one.jpg");
-			  background-color: black;
-			  background-size: 256px 256px, cover;
-			  background-position: top left, center center;
- */			}
+			}
 
 			.video-container object, .video-container embed {
 			  position: absolute;
@@ -2551,21 +2573,137 @@ input, select, textarea {
 	}
 
 
-
-
-
-
 /* Donation Page */
+
+	#quote {
+		font-size: 22px; 
+		font-style: italic;
+		color: white; 
+		padding: 200px 10px 200px 10px;
+		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background-color: black;
+		background-size: 256px 256px, cover;
+		background-position: top left, center center;
+	}
+	
+	@media screen and (max-width: 736px) {
+		#quote {
+			font-size: 18px;
+			padding: 30px 10px 150px 10px;
+		}
+	}
+
+	#quote p {
+		width: 80%;
+		text-align:center;
+		margin: auto;
+		text-shadow: 1px 1px black;
+		background-color: rgba(0,0,0,0.5);
+		padding: 25px;
+	}
+
+
+	#help-main {
+		display: overflow;
+		margin: auto;
+		padding-bottom:0; 
+		margin-bottom:0;
+	}
+	
+	.help-list {
+		position: relative;
+		display: inline-block;
+		margin: 10px;
+	}
+	
+	.help-item {
+		float: left;
+		max-width: 290px;
+		min-height: 290px;
+		margin: 10px;
+		border: 1px solid lightgrey;
+		border-radius: 6px;
+		background-color: white;
+		cursor: pointer;
+		opacity: 100%;	
+		vertical-align: middle;
+		display: table-cell;
+		justify-content: center;
+		color:#39454b;
+	}
+	
+	.help-item:hover, .help-item:active {
+		opacity: 100%;
+/* 		border: 1px solid lightgreen;
+		background-color: rgb(220,250,220);
+ */		z-index: 100001;
+	}
+		.help-item h3 {
+			position: absolute;
+			color: white;
+			padding: 6px;
+			margin-left: 95px;
+			margin-top: -35px;
+			font-size: 16px;
+			z-index: 2;
+		}
+		
+		.help-item a {
+			text-decoration: none;
+		}
+	
+		.help-item img {
+			padding: 0;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			margin-bottom: 10px;
+			padding: 0px;
+			opacity: 100%;
+			height: 150px; /* teste */
+		}
+	
+		.help-item p {
+			font-size: 15px;
+			line-height: 21px;
+			text-align: center;
+			margin: auto;
+			padding: 30px 8px 0px 8px;
+			margin-bottom: 0;
+		}
+		
+		.help-item h2 {
+			position:absolute;
+			width: 200px;
+			height: 70px;
+			margin: -50px 0 0 45px;
+			background-color: inherit;
+			border-radius: 5px;
+			font-size: 22px;
+			font-weight: normal;
+			text-align: center;
+			line-height: 70px;
+		}
+	
+	
 	
 	.button-list li {
 		display: inline-block;
 		margin: 6px 6px;
 	}
 	
-	#donate-details {
+	#donate-details, #sponsor-details {
+		display:none;
 		text-align: justify;
-		margin: 50px 5px 50px 5px;
-		background-color: inherit;
+		margin: 50px 5px 0 5px;
+		background-color: rgb(240,240,240);
+		padding: 15px;
+	}
+	
+	#payment {
+		display:none;
+		margin: 0 5px 0 5px;
+		background-color: rgb(240,240,240);
+		padding: 0 0 20px 5px;
 	}
 	
 	ul.thanks {
