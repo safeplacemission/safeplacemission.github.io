@@ -62,20 +62,23 @@
 					<h3>Mais popular</h3>
 					<img class="image fit" src="images/thumbs/sponsor.jpg" title="Apadrinhamento" alt="" />
 					<h2 style="background-color: rgb(160, 210, 65);">Apadrinhamento</h2>
-					<p>Faça parte do crescimento de uma criança contribuindo todo mês e receba notícias, fotos e conteúdo exclusivo! <br><b style="color: #98c593;">Saiba mais</b></p>
+					<p>Faça parte do crescimento de uma criança contribuindo todo mês e receba notícias, fotos e conteúdo exclusivo!</p>
+					<span>Saiba mais</span>
 				</div></a>
 				
 				<a href="#donate-details"><div class="help-item" id="choice-donate">
 					<img class="image fit" src="images/thumbs/donate.jpg" title="Alimentação" alt="" />
 					<h2 style="background-color: rgb(235, 185, 80);">Doação Livre</h2>
-					<p>Doe um valor único ou recorrente de sua escolha para contribuir diretamente com a nossa missão e o projeto Safe Home. <b style="color: #98c593;">Saiba mais</b></p>
+					<p>Doe um valor único ou recorrente de sua escolha para contribuir diretamente com a nossa missão e o projeto Safe Home.</p>
+					<span>Saiba mais</span>
 				</div></a>
 				
-				<div class="help-item" id="choice-contact">
+				<a href="#contact-details"><div class="help-item" id="choice-contact">
 					<img class="image fit" src="images/thumbs/partner.jpg" title="Alimentação" alt="" />
 					<h2 style="background-color:rgb(250, 210, 190);">Parcerias</h2>
-					<p>Pode ajudar de alguma outra forma? Conte via <b><a href="https://wa.me/85570397508/?text=Ol%C3%A1%2C%20gostaria%20de%20contribuir%20com%20o%20projeto%2C%20pode%20me%20ajudar%3F">Whatsapp (+855 70397508)</a></b> ou <b><a href="mailto:safeplacemission@gmail.com">safeplacemission@gmail.com</a></b>.</p></p>
-				</div>
+					<p style="padding-top: 40px;">Você acredita que pode nos ajudar de alguma outra forma? Conte pra gente!</p>
+					<span>Saiba mais</span>
+				</div></a>
 			</div>
 		</section>
 		
@@ -120,6 +123,7 @@
 					<p><b>Apadrinhamento Exclusivo</b> — Você investirá mensalmente, durante um ano, US$300/mês (dólares) para o cuidado de uma criança. Você será o único padrinho desta criança, ou seja, receberá fotos, videos e novidades sobre ela com exclusividade.</p>
 					<p>Gostou da ideia? Entre em contato com a gente via <b><a href="https://wa.me/85570397508/?text=Ol%C3%A1%2C%20gostaria%20de%20me%20tornar%20um%20padrinho%20exclusivo%2C%20pode%20me%20ajudar%3F">Whatsapp (+855 70397508)</a></b> ou <b><a href="mailto:safeplacemission@gmail.com">safeplacemission@gmail.com</a></b> para esclarecer dúvidas e combinarmos os detalhes.</p>
 				</div>
+			</div>
 		</section>
 		
 		<section id="payment">
@@ -152,7 +156,23 @@
 					</article>
 				</div>
 			</div>
-		</section>			
+		</section>
+
+		<section id="contact-details" class="main">
+			<div class="content">
+				<p>Você também pode contribuir se tornando um parceiro ou voluntário,
+				fornecendo algum produto ou serviço que ajude nossa causa ou até mesmo
+				divulgando nosso projeto. Vamos conversar? Entre em contato conosco 
+				por meio de um dos nosso canais oficiais de comunicações:</p>
+				
+				<ul class="contacts" style="margin:auto; text-align:center;">
+					<li class="button style2" ><a href="mailto:safeplacemission@gmail.com" style="color: inherit;"><i class="fas fa-envelope"></i> safeplacemission@gmail.com</a></li>
+					<li class="button style1" ><a href="https://wa.me/85570397508/?text=Ol%C3%A1%2C%20gostaria%20de%20contribuir%20com%20o%20projeto%2C%20pode%20me%20ajudar%3F" class="icon brands fa-whatsapp" > Whatsapp (+855 70397508)</a></li>
+					<li class="button style3" ><a href="http://m.me/Safeplacemission/" class="icon brands fa-facebook-f"> Facebook (Messenger)</a></li>
+					<li class="button style4" ><a href="https://instagram.com/safeplacemission/" class="icon brands fa-instagram"> Instagram (Direct)</a></li>
+				</ul>
+			</div>
+		</section>
 
 		<!-- Footer -->
 		<footer id="footer">
@@ -185,6 +205,7 @@
 			document.getElementById('choice-donate').addEventListener('click', function () {
 				document.getElementById('donate-details').style.display='block';
 				document.getElementById('sponsor-details').style.display='none';
+				document.getElementById('contact-details').style.display='none';
 				document.getElementById('extra').style.display='none';
 				document.getElementById('info-vip').style.display='none';
 				document.getElementById('info-group').style.display='none';
@@ -194,6 +215,7 @@
 			document.getElementById('choice-sponsor').addEventListener('click', function () {
 				document.getElementById('donate-details').style.display='none';
 				document.getElementById('sponsor-details').style.display='block';
+				document.getElementById('contact-details').style.display='none';
 				document.getElementById('extra').style.display='none';
 				document.getElementById('info-vip').style.display='none';
 				document.getElementById('info-group').style.display='none';
@@ -203,6 +225,7 @@
 			document.getElementById('choice-contact').addEventListener('click', function () {
 				document.getElementById('donate-details').style.display='none';
 				document.getElementById('sponsor-details').style.display='none';
+				document.getElementById('contact-details').style.display='block';
 				document.getElementById('extra').style.display='none';
 				document.getElementById('info-vip').style.display='none';
 				document.getElementById('info-group').style.display='none';
