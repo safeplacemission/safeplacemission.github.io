@@ -21,7 +21,7 @@
 			xsmall:  [ null,      '480px'  ]
 		});
 
-	// Play initial animations on page load.
+	// Setup the home-screen background video 
 		$window.on('load', function() {
 			setTimeout(function() {
 				$body.removeClass('is-preload');
@@ -83,39 +83,6 @@
 
 		}
 
-	// Gallery.
-/* 		$window.on('load', function() {
-
-			var $gallery = $('.gallery');
-
-			$gallery.poptrox({
-				baseZIndex: 10001,
-				useBodyOverflow: false,
-				usePopupEasyClose: false,
-				overlayColor: '#1f2328',
-				overlayOpacity: 0.65,
-				usePopupDefaultStyling: false,
-				usePopupCaption: true,
-				popupLoaderText: '',
-				windowMargin: 50,
-				usePopupNav: true
-			});
-
-			// Hack: Adjust margins when 'small' activates.
-				breakpoints.on('>small', function() {
-					$gallery.each(function() {
-						$(this)[0]._poptrox.windowMargin = 50;
-					});
-				});
-
-				breakpoints.on('<=small', function() {
-					$gallery.each(function() {
-						$(this)[0]._poptrox.windowMargin = 5;
-					});
-				});
-
-		});
- */
 	// Section transitions.
 		if (browser.canUse('transition')) {
 
