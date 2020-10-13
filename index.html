@@ -144,6 +144,32 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script> <!-- Redirects New Users according to Browser Language -->
+			document.addEventListener("DOMContentLoaded", function(event) { 
+				var userLang = navigator.language || navigator.userLanguage;
+				if (getCookie("first_visit") != "true") {
+					document.cookie = "first_visit=true";
+					if (!userLang.startsWith('pt')) { 
+						document.location.href = 'en'; 
+					}
+				}
+			});
+			
+			function getCookie(cname) {
+				var name = cname + "=";
+				var ca = document.cookie.split(';');
+				for(var i = 0; i <ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0)==' ') {
+						c = c.substring(1);
+					}
+					if (c.indexOf(name) == 0) {
+						return c.substring(name.length,c.length);
+					}
+				}
+				return "";
+			}   			
+		</script>
 		<script> <!-- Show/Hide Mobile Donate Button -->
 			window.onscroll = function() {scrollFunction()};
 			function scrollFunction() {
