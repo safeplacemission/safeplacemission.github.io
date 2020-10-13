@@ -1774,7 +1774,26 @@ input, select, textarea {
 		.current-page {
 			border-bottom: 2px solid #39454b;
 		}
-				
+		
+		.header-donate {
+			background-color: #98c593;
+			background: rgb(113,180,105);
+			background: linear-gradient(0deg, rgba(113,180,105,1) 0%, rgba(152,197,147,1) 100%);
+			opacity: 80%;
+			color:#FFF;
+			padding-left: 18px; 
+			padding-right: 18px; 
+			border-radius: 18px;
+			height: 45px;
+			top: 5px;
+		}
+			.header-donate i {		
+				font-size: 15px;
+			}
+
+			.header-donate a {		
+				margin-top: -4px;
+			}
 
 		@media screen and (max-width: 736px) {	
 			.header-full {
