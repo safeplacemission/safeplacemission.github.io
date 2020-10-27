@@ -2283,7 +2283,7 @@ input, select, textarea {
 		}	 
 	
 	.side-description {
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 		
 	@media screen and (max-width: 736px) {
