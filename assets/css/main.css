@@ -2452,6 +2452,11 @@ input, select, textarea {
 		background-color: rgba(0,0,0,0.5);
 		padding: 25px;
 	}
+	
+	#quote.small { 
+		padding: 30px 10px 30px 10px;
+		margin-bottom: -50px;
+	}
 
 
 	#help-main {
