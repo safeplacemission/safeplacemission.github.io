@@ -778,12 +778,13 @@ input, select, textarea {
 		/* Button Style Social Media */
 		
 		.button.style3, button.style3 {
-			background-color: #2b4170;
-			background: -moz-linear-gradient(top, #3b5998, #2b4170);
-			background: -ms-linear-gradient(top, #3b5998, #2b4170);
-			background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+			background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+			background-color:#33bdef;
 			border: solid 2px #e5e6e7;
 			color: white;
+			min-width: 100px;
+			padding-left: 25px;
+			padding-right: 25px;
 		}
 		.button.style3:hover, button.style3:hover { opacity: 75%; }
 		.button.style3:active, button.style3:active { opacity: 85%; }
@@ -796,6 +797,9 @@ input, select, textarea {
 			background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 			background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+			min-width: 100px;
+			padding-left: 25px;
+			padding-right: 25px;
 		}
 		.button.style4:hover, button.style4:hover { opacity: 75%; }
 		.button.style4:active, button.style4:active { opacity: 85%; }
@@ -815,6 +819,14 @@ input, select, textarea {
 		}
 		.button.style5:hover, button.style5:hover { background-color: lightgreen; opacity: 75%; }
 		.button.style5:active, button.style5:active { background-color: lightgreen; opacity: 85%; }
+		
+		.button.style6, button.style6 {
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+			color: white;
+		}
+		.button.style6:hover, button.style6:hover { opacity: 75%; }
+		.button.style6:active, button.style6:active { opacity: 85%; }
 		
 
 /* Form */
@@ -1997,7 +2009,7 @@ input, select, textarea {
 
 		.main.style3 {
 			text-align: center;
-			padding: 6em 0 6em 0;
+			padding: 4em 0 4em 0;
 		}
 
 			.main.style3 .content > header {
@@ -2083,7 +2095,7 @@ input, select, textarea {
 				}
 
 			.main.style2 {
-				padding: 6em 15px 6em 15px;
+				padding: 4em 15px 4em 15px;
 			}
 
 				.main.style2:before, .main.style2:after {
@@ -2282,6 +2294,8 @@ input, select, textarea {
 	
 		#work article {
 			cursor: pointer;
+			background-color: white;
+			padding: 5px;
 		}	 
 	
 		#team img, #work img {
@@ -2289,7 +2303,8 @@ input, select, textarea {
 		}	 
 	
 	.side-description {
-		margin-top: 10px;
+		margin-top: 20px;
+		
 	}
 		
 	@media screen and (max-width: 736px) {
@@ -2344,6 +2359,7 @@ input, select, textarea {
 	#project {
 		padding: 30px 0 30px 0;
 	}
+	
 	#project .gallery p {
 		text-align: justify;
 	}
@@ -2406,15 +2422,32 @@ input, select, textarea {
 		}
 			
 			
+	#subscribe {
+		width: 100%;
+	}
+
+		#subscribe .gallery {
+			width: 45%;
+			float: left;
+			margin-bottom: 30px;
+		}
+		#subscribe .gallery li {
+			margin: 0;
+		}
+		#subscribe .gallery a {
+			height: 3.5em;
+			margin-top: -0.25em;
+			
+		}
+	
 	#mc_embed_signup {
-		margin-top: -0.5em;
-		padding-bottom: 1em;
-		margin-bottom: 2.5em;
+		width: 50%;
+		float: left;
+		margin-left: 1.5em;
 	}
 		
 	#mc_embed_signup_scroll {  
 		text-align: center;
-		width: 65%;
 		margin: auto;
 	}
 		
@@ -2438,7 +2471,22 @@ input, select, textarea {
 			border-radius: 0 10px 10px 0;
 		}
 		
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 800px) {
+		#mc_embed_signup {
+			width: 100%;
+			margin-left: 0;
+		}
+		#mc_embed_signup_scroll {
+			width: 75%;
+		}
+		#subscribe .gallery {
+			width: 100%;
+			float: center;
+			margin-top: 15px;
+		}
+	}
+	
+	@media screen and (max-width: 480px) {
 		#mc_embed_signup_scroll {
 			width: 100%;
 		}
