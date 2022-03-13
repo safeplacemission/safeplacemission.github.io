@@ -22,36 +22,44 @@
 		
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Safe Place Mission" />
+		<meta name="keywords" content="safe place mission, safe home, ONG, cambodia, camboja, asia, criança, doação, missão, evangelho" />
+		<meta name="description" content="Combatemos o impacto da violência e abusos contra crianças no Camboja."/>
+
+		<meta property="og:image" content="https://safeplacemission.com/images/banner.jpg" />
+		<meta property="og:title" content="Safe Place Mission" />
+		<meta property="og:url" content="https://safeplacemission.com" />
+		<meta property="og:description" content="Combatemos o impacto da violência e abusos contra crianças no Camboja."/>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 		<header id="header">
-			<div class="header-title"><a href="en"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
-			<a href="doe" class="header-previous"> &nbsp <i class="fas fa-arrow-left"></i>&nbsp &nbsp  </a>
-			<a href="obrigado" class="header-language"><i class="fas fa-globe-americas"></i> PT &nbsp </a>
+			<div class="header-title"><a href="/"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
+			<a href="javascript:history.back()" class="header-previous"> &nbsp <i class="fas fa-arrow-left"></i>&nbsp &nbsp  </a>
+			<a href="donate" class="header-language"><i class="fas fa-globe-americas"></i> EN &nbsp </a>
 			<nav class="header-full">
 				<ul>
-					<li><a href="en">Main</a></li>
-					<li><a href="team">Team</a></li>
-					<li><a href="safehome">Safe Home</a></li>
-					<li><a href="donate" class="current-page">Donate</a></li>
-					<li><a href="obrigado"><i class="fas fa-globe-americas"></i> Portuguese</a></li>
+					<li><a href="/">Início</a></li>
+					<li><a href="equipe" class="current-page">Equipe</a></li>
+					<li><a href="larseguro">Safe Home</a></li>
+					<li class="header-donate"><a href="doe">Doe & Apadrinhe</a></li>
+					<li><a href="donate"><i class="fas fa-globe-americas"></i> English</a></li>
 				</ul>
 			</nav>	
 		</header>
 		
-		<!-- Payment Options -->
-		<section id="quote" class="main style2 dark fullscreen">
-			<div class="content" style="text-align:center;">
-				<h2 style="font-size:50px">Thank you very much for your support! <i class="fas fa-heart"></i></h2>
+		<!-- Hero Quote -->
+		<!-- <div id="team-full"></div> -->
 
-				<ul class="thanks">
-					<li><a href="https://facebook.com/Safeplacemission/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="https://instagram.com/safeplacemission/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
-				</ul>
-
+		<!-- Donations Info -->
+		<section style="display:block">
+			<div class="content">
+				<p style="text-align:center"><b>Conheça a nossa equipe:</b></p>
+				<div class="gallery">				
+					<img class="image fit" src="images/team_full.jpg" title="Equipe" alt="" />
+				</div>
 			</div>
 		</section>
 		
@@ -83,6 +91,11 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			document.getElementById('choice-bank').addEventListener('click', function () {
+				document.getElementById('extra').style.display='block';
+			});		
+		</script>
 
 	</body>
 </html>

@@ -2709,3 +2709,32 @@ input, select, textarea {
 			border: 0;
 		}
 		
+		
+	/* Team Page */
+
+	#team-full {
+		font-size: 22px; 
+		font-style: italic;
+		color: white; 
+		padding: 200px 10px 200px 10px;
+		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background-color: black;
+		background-size: 256px 256px, cover;
+		background-position: top left, center center;
+	}
+	
+	@media screen and (max-width: 736px) {
+		#team-full {
+			font-size: 18px;
+			padding: 30px 10px 150px 10px;
+		}
+	}
+
+	#team-full p {
+		width: 80%;
+		text-align:center;
+		margin: auto;
+		text-shadow: 1px 1px black;
+		background-color: rgba(0,0,0,0.5);
+		padding: 25px;
+	}
