@@ -1718,6 +1718,14 @@ input, select, textarea {
 		text-align: center;
 		margin: auto;
 	}
+	
+	.bank {
+		font-size: 0.9em;
+	}	
+	
+	.small-warning {
+		font-size: 0.85em;
+	}
 
 /* Header */
 
