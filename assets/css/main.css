@@ -2229,7 +2229,14 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+			
+			.disclaimer {
+					padding-bottom: 0;
+			}
+			
 			#footer {
+				padding-top: 0;
+				min-height: 40px;
 				margin-bottom: 55px;
 			}
 
@@ -2237,8 +2244,8 @@ input, select, textarea {
 				border-left: none;
 				display: block;
 				line-height: inherit;
-				margin: 0.25em 0 0 0;
-				padding: 0.25em 0 0 0;
+				margin: 0.15em 0 0 0;
+				padding: 0.15em 0 0 0;
 			}
 
 				#footer ul.menu li:first-child {
@@ -2673,7 +2680,6 @@ input, select, textarea {
 			color: #98c593;
 			font-weight: bold;
 		}
-	
 	
 	
 	.button-list li {
