@@ -811,14 +811,16 @@ input, select, textarea {
 			color: inherit;	
 			min-width: 70px;
 			height: 45px;
-			font-size: 16px;
-			padding-left: 12px;
-			padding-right: 12px;
-			padding-top: 8px;
+			font-size: 17px;
+			padding-left: 15px;
+			padding-right: 15px;
 			line-height: 25px;
+			display: flex;
+			align-items: center;
 		}
 		.button.style5:hover, button.style5:hover { background-color: lightgreen; opacity: 75%; }
 		.button.style5:active, button.style5:active { background-color: lightgreen; opacity: 85%; }
+		.button.style5 img, button.style5 img { opacity: 75%; width: 20px; }
 		
 		.button.style6, button.style6 {
 	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
@@ -2157,7 +2159,7 @@ input, select, textarea {
 		position: relative;
 		margin: 0;
 		line-height: 1em;
-		padding: 1.5em;
+		padding: 0 1.5em 1.5em 1.5em;
 		background: #39454b;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
@@ -2177,12 +2179,32 @@ input, select, textarea {
 
 		#footer ul.menu {
 			margin: 0;
+			display: flex;
+			align-items: center;
 		}
 
 			#footer ul.menu li {
 				border-left-color: rgba(185, 186, 187, 0.2);
 				font-size: 0.9em;
 			}
+			
+		.disclaimer {
+			font-size: 0.8em;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			background: #39454b;
+			color: rgba(185, 186, 187, 0.5);
+			margin-bottom: 0;
+			padding: 1.5em;
+			margin-top: -40px;
+			line-height: 20px;
+			justify-content: center;
+		}
+		.disclaimer p { padding: 0;}
+		#footer img { height: 30px; padding: 0; }
+		
+
 
 		@media screen and (max-width: 1000px) {
 
@@ -2659,7 +2681,12 @@ input, select, textarea {
 		margin: 6px 6px;
 	}
 	
-	#donate-details, #sponsor-details, #contact-details {
+	.button-list2 li {
+		
+		margin: 6px 6px;
+	}
+	
+	#donate-details, #sponsor-details, #contact-details, #note {
 		display:none;
 		text-align: justify;
 		margin: 50px 5px 0 5px;
@@ -2670,9 +2697,28 @@ input, select, textarea {
 	#payment {
 		display:none;
 		margin: 0 5px 0 5px;
-		background-color: rgb(240,240,240);
-		padding: 0 0 20px 5px;
+		padding: 0 0 20px 10px;
+		min-height: 300px;
 	}
+	
+	img.qrcode {
+		width: 65%;
+	}
+	
+	@media screen and (max-width: 736px) {
+		#payment {
+			min-height: 500px;
+		}
+		
+		img.qrcode {
+			width: 90%;
+		}
+	}
+	
+	#extra {
+		margin-top: 10px;
+	}
+	
 	
 	ul.contacts {
 		cursor: default;
