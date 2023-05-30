@@ -151,6 +151,7 @@
 					<article>
 						<ul class="button-list2" style="margin:auto; text-align:center;">
 						<li><p>De qual país você gostaria de doar?</p></li>
+							<li><a href="#payment" class="button style5" id="choice-au"><img src="images/au.png"/> &nbsp Austrália</a></li>
 							<li><a href="#payment" class="button style5" id="choice-br"><img src="images/br.png"/> &nbsp Brasil</a></li>
 							<li><a href="#payment" class="button style5" id="choice-kh"><img src="images/kh.png"/> &nbsp Camboja</a></li>
 							<li><a href="#payment" class="button style5" id="choice-int"><img src="images/int.png"/> &nbsp Internacional (outros países)</a></li>
@@ -295,7 +296,20 @@
 			});
 			
 			// Payment
+			document.getElementById('choice-au').addEventListener('click', function () {
+				document.getElementById('choice-au').style.backgroundColor='#D9FFFB';
+				document.getElementById('choice-br').style.backgroundColor='inherit';
+				document.getElementById('choice-kh').style.backgroundColor='inherit';
+				document.getElementById('choice-int').style.backgroundColor='inherit';
+				document.getElementById('country-br').style.display='none';
+				document.getElementById('country-kh').style.display='none';
+				document.getElementById('country-int').style.display='block';
+				document.getElementById('extra').style.display='none';
+				document.getElementById('note').style.display='block';
+			});	
+			
 			document.getElementById('choice-br').addEventListener('click', function () {
+				document.getElementById('choice-au').style.backgroundColor='inherit';
 				document.getElementById('choice-br').style.backgroundColor='#D9FFFB';
 				document.getElementById('choice-kh').style.backgroundColor='inherit';
 				document.getElementById('choice-int').style.backgroundColor='inherit';
@@ -307,6 +321,7 @@
 			});			
 
 			document.getElementById('choice-kh').addEventListener('click', function () {
+				document.getElementById('choice-au').style.backgroundColor='inherit';
 				document.getElementById('choice-br').style.backgroundColor='inherit';
 				document.getElementById('choice-kh').style.backgroundColor='#D9FFFB';
 				document.getElementById('choice-int').style.backgroundColor='inherit';
@@ -318,6 +333,7 @@
 			});			
 
 			document.getElementById('choice-int').addEventListener('click', function () {
+				document.getElementById('choice-au').style.backgroundColor='inherit';
 				document.getElementById('choice-br').style.backgroundColor='inherit';
 				document.getElementById('choice-kh').style.backgroundColor='inherit';
 				document.getElementById('choice-int').style.backgroundColor='#D9FFFB';
