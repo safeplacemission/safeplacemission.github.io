@@ -1725,6 +1725,10 @@ input, select, textarea {
 		font-size: 0.9em;
 	}	
 	
+	.bank br{
+	   display:block !important;
+	}
+	
 	.small-warning {
 		font-size: 0.85em;
 	}
