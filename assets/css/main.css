@@ -2712,7 +2712,7 @@ input, select, textarea {
 	}
 	
 	img.qrcode {
-		width: 65%;
+		width: 50%;
 	}
 	
 	@media screen and (max-width: 736px) {
