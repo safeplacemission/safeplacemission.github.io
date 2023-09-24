@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.safeplacemission.com/</loc>
+    <loc>https://www.safeplacemission.com/</loc>
     <xhtml:link 
                rel="alternate"
-               hreflang="en"
-               href="https://www.safeplacemission.com/en"/>
+               hreflang="pt"
+               href="https://www.safeplacemission.com?lang=pt"/>
   </url>
   <url>
-    <loc>https://www.safeplacemission.com/larseguro</loc>
+    <loc>https://www.safeplacemission.com/safehome</loc>
     <xhtml:link 
                rel="alternate"
-               hreflang="en"
-               href="https://www.safeplacemission.com/safehome"/>
+               hreflang="pt"
+               href="https://www.safeplacemission.com/safehome?lang=pt"/>
   </url>
   <url>
-    <loc>https://www.safeplacemission.com/doe</loc>
+    <loc>https://www.safeplacemission.com/donate</loc>
     <xhtml:link 
                rel="alternate"
-               hreflang="en"
-               href="https://www.safeplacemission.com/donate"/>
+               hreflang="pt"
+               href="https://www.safeplacemission.com/donate?lang=pt"/>
   </url>
 </urlset>

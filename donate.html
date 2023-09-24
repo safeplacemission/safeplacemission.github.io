@@ -33,61 +33,67 @@
 		<meta property="og:description" content="We fight against child abuse and human trafficking in Cambodia."/>
 	</head>
 	<body class="is-preload">
-
+		
 		<!-- Header -->
 		<header id="header">
-			<div class="header-title"><a href="en"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
-			<a href="javascript:history.back()" class="header-previous"> &nbsp <i class="fas fa-arrow-left"></i>&nbsp &nbsp  </a>
-			<a href="doe" class="header-language"><i class="fas fa-globe-americas"></i> PT &nbsp </a>
+			<div class="header-title"><a href="/"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
+			<a href="javascript:history.back()" class="header-previous"> &nbsp <i class="fas fa-arrow-left"></i>&nbsp &nbsp  </a>			
 			<nav class="header-full">
 				<ul>
-					<li><a href="en">Main</a></li>
-					<li><a href="safehome">Safe Home</a></li>
-					<li class="header-donate"><a href="donate" class="current-page">Donate & Sponsor</a></li>
-					<li><a href="doe"><i class="fas fa-globe-americas"></i> Português</a></li>
+					<li><a href="index" data-i18n="header.home"></a></li>
+					<li><a href="safehome" data-i18n="header.program"></a></li>
+					<li class="header-donate"><a href="donate" data-i18n="header.donate" class="current-page"></a></li>
 				</ul>
 			</nav>	
+			<nav class="lang-menu">
+				<span class="selected-lang" data-i18n="header.language"></span>
+				<ul>
+					<li><a href="?lang=en" class="en" data-i18n="header.en"></a></li>
+					<li><a href="?lang=pt" class="pt" data-i18n="header.pt"></a></li>
+					<li><a href="?lang=kh" class="kh" data-i18n="header.kh"></a></li>
+				</ul>
+			</nav>
 		</header>
 		
 		<!-- Hero Quote -->
 		<div id="quote">
-			<p><b>Rescuing and changing lives in Cambodia</b> is only possible thanks to many supporters around the world. <br><b>You are about to join us and be part of the change</b>.</p>
+			<p data-i18n="donations.quote"></p>
 		</div>
 		
 		<!-- Donate Options -->
 		<section id="help-main" class="main style2" style="margin-top: -200px;">
 			<div class="help-list">
 				<a href="#sponsor-details"><div class="help-item" id="choice-sponsor">
-					<h3>Most popular</h3>
-					<img class="image fit" src="images/thumbs/sponsor.jpg" title="Apadrinhamento" alt="" />
-					<h2 style="background-color: rgb(160, 210, 65);">Sponsorship</h2>
-					<p>Become part of a child life with our sponsor program and receive exclusive news, pictures and content.</p>
-					<span>Read more</span>
+					<h3 data-i18n="donations.popular"></h3>
+					<img class="image fit" src="images/thumbs/sponsor.jpg" title="Sponsor" alt="" />
+					<h2 data-i18n="donations.sponsorTitle" style="background-color: rgb(160, 210, 65);"></h2>
+					<p data-i18n="donations.sponsorDescription"></p>
+					<span data-i18n="donations.readmore"></span>
 				</div></a>
 				
 				<a href="#donate-details"><div class="help-item" id="choice-donate">
-					<img class="image fit" src="images/thumbs/donate.jpg" title="Alimentação" alt="" />
-					<h2 style="background-color: rgb(235, 185, 80);">Donation</h2>
-					<p>Donate the amount at your choice, once or monthly, to help with our mission and Safe Home program.</p>
-					<span>Read more</span>
+					<img class="image fit" src="images/thumbs/donate.jpg" title="Donatate" alt="" />
+					<h2 data-i18n="donations.donateTitle" style="background-color: rgb(235, 185, 80);"></h2>
+					<p data-i18n="donations.donateDescription"></p>
+					<span data-i18n="donations.readmore"></span>
 				</div></a>
 				
 				<a href="#contact-details"><div class="help-item" id="choice-contact">
-					<img class="image fit" src="images/thumbs/partner.jpg" title="Alimentação" alt="" />
-					<h2 style="background-color:rgb(250, 210, 190);">Partnership</h2>
-					<p style="padding-top: 40px;">Do you believe you can help us in any other way? Get in touch!</p>
-					<span>Read more</span>
+					<img class="image fit" src="images/thumbs/partner.jpg" title="Partnership" alt="" />
+					<h2 data-i18n="donations.partnerTitle" style="background-color:rgb(250, 210, 190);"></h2>
+					<p data-i18n="donations.partnerDescription" style="padding-top: 40px;"></p>
+					<span data-i18n="donations.readmore"></span>
 				</div></a>
 			</div>
 		</section>
 		
 		<section id="contact-details" class="main">
 			<div class="content">
-				<p>You can also help by becoming a partner or volunteer, by providing a product or service related to our mission, or by advocating for our program. Get in touch with us using your preferred channel:</p>
+				<p data-i18n="donations.partnerContent"></p>
 				
 				<ul class="contacts" style="margin:auto; text-align:center;">
 					<li class="button style2" ><a href="mailto:safeplacemission@gmail.com" style="color: inherit;"><i class="fas fa-envelope"></i> safeplacemission@gmail.com</a></li>
-					<li class="button style1" ><a href="https://wa.me/85570397508/?text=Ol%C3%A1%2C%20gostaria%20de%20contribuir%20com%20o%20projeto%2C%20pode%20me%20ajudar%3F" class="icon brands fa-whatsapp" > Whatsapp (+855 70397508)</a></li>
+					<li class="button style1" ><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp" > WhatsApp (+855 70397508)</a></li>
 					<li class="button style3" ><a href="http://m.me/Safeplacemission/" class="icon brands fa-facebook-f"> Facebook (Messenger)</a></li>
 					<li class="button style4" ><a href="https://instagram.com/safeplacemission/" class="icon brands fa-instagram"> Instagram (Direct)</a></li>
 				</ul>
@@ -97,35 +103,35 @@
 		<!-- Donations Info -->
 		<section id="donate-details" class="main">
 			<div class="content">
-				<p style="text-align:center"><b>How can your donation help us?</b></p>
-				<p><i class="fas fa-grin"></i> <b>Children</b> — Providing meals, education, healthcare, entertainment, culture and clothes for all children supported by the program including any new rescued child.</p>
-				<p><i class="fas fa-home"></i> <b>Home</b> — Financially support the facilities where children and our team live, including common bills such as renting, water, electricity, cleaning, and repairs.</p>
-				<p><i class="fas fa-user"></i> <b>Team</b> — Guarantee people support to manage, cook, and take care of the children. Moreover, it covers our expenses with partners, paperwork and rescue missions.</p>
+				<p style="text-align:center" data-i18n="donations.donateContent1"></p>
+				<p><i class="fas fa-grin"></i> <span data-i18n="donations.donateContent2"></span></p>
+				<p><i class="fas fa-home"></i> <span data-i18n="donations.donateContent3"></span></p>
+				<p><i class="fas fa-user"></i> <span data-i18n="donations.donateContent4"></span></p>
 			</div>
 		</section>
 		
 		<section id="sponsor-details" class="main">
 			<div class="content">
-				<p>When you <b>sponsor a child</b> you become part of our family by offering monthly financial support for a Cambodian child of our Safe Home program. That means you will contribute to make sure one child receives meals, education, clothes, entertainment and a better future. In addition, we will share with you pictures, videos and news during his/her development.</p>
+				<p data-i18n="donations.sponsorContent1"></p>
 				
-				<p id="sponsor-value" style="text-align:center"><b>How much would you like to donate?</b></p>
+				<p id="sponsor-value" style="text-align:center" data-i18n="donations.sponsorContent2"></p>
 				<ul class="button-list" style="margin:auto; text-align:center; padding-bottom: 10px;">
 					<span id="choice-group">
-						<li><a href="#sponsor-value" class="button style5"><b>$30</b>/month</a></li>
-						<li><a href="#sponsor-value" class="button style5"><b>$50</b>/month</a></li>
-						<li><a href="#sponsor-value" class="button style5"><b>$150</b>/month</a></li>
-						<li><a href="#sponsor-value" class="button style5"><b>Other amount</b></a></li>
+						<li><a href="#sponsor-value" class="button style5" data-i18n="donations.sponsorValue1"></a></li>
+						<li><a href="#sponsor-value" class="button style5" data-i18n="donations.sponsorValue2"></a></li>
+						<li><a href="#sponsor-value" class="button style5" data-i18n="donations.sponsorValue3"></a></li>
+						<li><a href="#sponsor-value" class="button style5" data-i18n="donations.sponsorValue4"></a></li>
 					</span>
-					<li><a id="choice-vip" href="#sponsor-value" class="button style5"><b>(VIP) US$300</b>/month</a></li>
+					<li><a id="choice-vip" href="#sponsor-value" class="button style5" data-i18n="donations.sponsorValue5"></a></li>
 				</ul>
 				
 				<div id="info-group">
-					<p><b>Shared Sponsorship</b> — You will help financially one child along with other sponsors. This group can be organized by us or yourself. All sponsors of that child will receive pictures, videos and news no matter how much each sponsor donates.</p>
+					<p data-i18n="donations.sponsorShared"></p>
 				</div>
 				
 				<div id="info-vip">
-					<p><b>Exclusive Sponsorship</b> — You will invest US$300/month for a period of one year (minimum) to financially support one child. As you will be the only sponsor you will exclusively receive pictures, videos and news of this child.</p>
-					<p>Are you interested in this opportunity? Get in touch with us via <b><a href="https://wa.me/85570397508/?text=Hello%2C%20I%20want%20to%20sponsor%20a%20child%2C%20can%20you%20help%20me%3F">Whatsapp (+855 70397508)</a></b> or <b><a href="mailto:safeplacemission@gmail.com">safeplacemission@gmail.com</a></b> for any question and to start the process.</p>
+					<p data-i18n="donations.sponsorVIP1"></p>
+					<p data-i18n="donations.sponsorVIP2"></p>
 				</div>
 			</div>
 		</section>
@@ -133,15 +139,15 @@
 		<!-- Payment Options -->
 		<section id="payment" class="main" style="display:none; margin-top: 10px;">
 			<div class="content" style="text-align:center">
-				<p><b>Payment Options</b></p>
+				<p data-i18n="payments.header"></p>
 				<div class="gallery">
 					<article>
 						<ul class="button-list2" style="margin:auto; text-align:center;">
-						<li><p>From which country will you donate?</p></li>
-							<li><a href="#payment" class="button style5" id="choice-au"><img src="images/au.png"/> &nbsp Australia</a></li>
-							<li><a href="#payment" class="button style5" id="choice-br"><img src="images/br.png"/> &nbsp Brazil</a></li>
-							<li><a href="#payment" class="button style5" id="choice-kh"><img src="images/kh.png"/> &nbsp Cambodia</a></li>
-							<li><a href="#payment" class="button style5" id="choice-int"><img src="images/int.png"/> &nbsp International (any other country)</a></li>
+						<li><p data-i18n="payments.country"></p></li>
+							<li><a href="#payment" class="button style5" id="choice-au"><img src="images/au.png"/>&nbsp <span data-i18n="payments.australia"></span></a></li>
+							<li><a href="#payment" class="button style5" id="choice-br"><img src="images/br.png"/>&nbsp <span data-i18n="payments.brazil"></span></a></li>
+							<li><a href="#payment" class="button style5" id="choice-kh"><img src="images/kh.png"/>&nbsp <span data-i18n="payments.cambodia"></span></a></li>
+							<li><a href="#payment" class="button style5" id="choice-int"><img src="images/int.png"/>&nbsp <span data-i18n="payments.international"></span></a></li>
 						</ul>
 					</article>
 					
@@ -149,9 +155,9 @@
 						<div id="country-br" style="display:none; padding-top: 0px;">
 							<div class="content" style="text-align:center">									
 								<ul class="button-list" style="margin:auto; text-align:center;">
-									<li class="small-warning">Please choose a payment method:</li>
-									<li><a href="#extra" class="button" id="choice-bank"><i class="fas fa-donate"></i>&nbsp <b>PIX</b> or <b>Bank Transfer</b></a></li>	
-									<li><a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=C6LRND6BHP2RE&locale.x=en" class="button"><i class="fas fa-credit-card"></i>&nbsp <b>Credit Card</b> or <b>PayPal</b></a></li></br>
+									<li class="small-warning" data-i18n="payments.method"></li>
+									<li><a href="#extra" class="button" id="choice-bank"><i class="fas fa-donate"></i>&nbsp <span data-i18n="payments.brazilPix"></a></li>	
+									<li data-i18n="payments.paypal"></li></br>
 								</ul>
 							</div>											
 						</div>
@@ -163,19 +169,19 @@
 						
 						<div id="country-int" style="display:none; padding-top: 25px;">
 							<div class="content">
-									<p class="bank" ><b>Cambodia / International (SWIFT)</b> &nbsp;</br>
-										Beneficiary: SAFE PLACE MISSION &nbsp;</br>
-										Currency: USD (American Dollar) &nbsp;</br>
-										Account number: 003630060 &nbsp;</br>
-										Account type: Current &nbsp;</br>
-										SWIFT code: ABAAKHPP &nbsp;</br>
-										Bank name: ADVANCED BANK OF ASIA LIMITED &nbsp;</br>
-										Bank address: No. 148, Preah Sihanouk Blvd. &nbsp;</br>
+									<p class="bank" ><b data-i18n="payments.swiftTitle"></b> &nbsp;</br>
+										<span data-i18n="payments.swiftBeneficiary"></span> SAFE PLACE MISSION &nbsp;</br>
+										<span data-i18n="payments.swiftCurrency"></span> &nbsp;</br>
+										<span data-i18n="payments.swiftAccount"></span> 003630060 &nbsp;</br>
+										<span data-i18n="payments.swiftAccountType"></span> &nbsp;</br>
+										<span data-i18n="payments.swiftCode"></span> ABAAKHPP &nbsp;</br>
+										<span data-i18n="payments.swiftBankName"></span> ADVANCED BANK OF ASIA LIMITED &nbsp;</br>
+										<span data-i18n="payments.swiftBankAddress"></span> No. 148, Preah Sihanouk Blvd. &nbsp;</br>
 										Phnom Penh, Cambodia &nbsp;</br>
 									</p>
 									<ul class="button-list" style="margin:auto; text-align:center;">
-									<li class="small-warning">or</li></br>
-										<li><a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=C6LRND6BHP2RE&locale.x=en" class="button"><i class="fas fa-credit-card"></i>&nbsp <b>Credit Card</b> or <b>PayPal</b></a></li></br>
+									<li class="small-warning" data-i18n="payments.or"></li></br>
+										<li data-i18n="payments.paypal"></li></br>
 									</ul>
 							</div>
 						</div>
@@ -184,22 +190,22 @@
 			</div>
 			
 			<div id="extra" class="content" style="display:none; text-align:center;">
-				<p><b>Brazilian Banking Information</b></p>
+				<p data-i18n="payments.brazilBankTitle"></p>
 				<div class="gallery">
 					<article>
 						<p class="bank"><b>PIX</b></br>
-							<img class="qrcode" src="images/pix.png"/></bR>
-							<b>Beneficiary:</b> Safe Place Mission</br>
-							<b>PIX Key:</b> missionsafeplace@gmail.com
+							<img class="qrcode" src="images/pix.png"/></br>
+							<b data-i18n="payments.brazilPixBeneficiary"></b> Safe Place Mission</br>
+							<b data-i18n="payments.brazilPixKey"></b> missionsafeplace@gmail.com
 						</p>
 					</article>
 					<article>
-						<p class="bank"><b>Bank Transfer</b></br>
+						<p class="bank"><b data-i18n="payments.brazilBankTransfer"></b></br>
 							SAFE PLACE MISSION</br>
 							Bradesco: ag 0036-1 cc 0013006-0</br>
 							Banco do Brasil: ag 0097-3 cc 88.194-5</br>
 							CNPJ: 31.415.363/0001-11</br>
-						<i class="small-warning">PS: If you have any issue related to the CNPJ code, try the following: 03.141.5363/0001-11</i>
+						<i class="small-warning" data-i18n="payments.brazilWarning"></i> <i class="small-warning"> 03.141.5363/0001-11</i>
 						</p>
 					</article>
 				</div>
@@ -207,13 +213,12 @@
 		</section>
 		
 		<section id="note" style="display:none">
-				<p class="small-warning" style="text-align:center;"><i>You may opt to send us a receipt of your donation in order to receive news about Safe Home:</br> Contact us via <b><a href="https://wa.me/85570397508/?text=Hello%2C%20there%20is%20a%20receipt%20of%20the%20bank%20transfer%20attached%20bellow%2C%20can%20you%20help%20me%3F">Whatsapp (+855 70397508)</a></b> or <b><a href="mailto:safeplacemission@gmail.com">safeplacemission@gmail.com</a></b>.</i></p>
+				<p class="small-warning" style="text-align:center;" data-i18n="payments.receipt"></p>
 		</section>
 		
 		<!-- Footer -->
 		<footer>
 			<div class="disclaimer">
-
 			</div>
 			
 			<div id="footer">
@@ -221,14 +226,14 @@
 				<ul class="icons">
 					<li><a href="https://facebook.com/Safeplacemission/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="https://instagram.com/safeplacemission/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
 					<li><a href="mailto:safeplacemission@gmail.com">safeplacemission@gmail.com</a></li>
 				</ul>
 
 				<!-- Menu -->
 				<ul class="menu">
-					<li><a href="assets/SPM_Child_Protection_Policy.pdf">CHILD PROTECTION POLICY</a></li>
-					<li>&copy; Safe Place Mission</li>					
+					<li><a data-i18n="footer.policy" href="assets/SPM_Child_Protection_Policy.pdf"></a></li>
+					<li data-i18n="footer.organization"></li>					
 					<li>Design: <a href="https://html5up.net">HTML5 UP</a>, <a href="https://apiffer.com">apiffer</a></li>
 				</ul>
 			</div>
@@ -243,6 +248,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/i18n.js"></script>
 		<script>
 			document.getElementById('choice-donate').addEventListener('click', function () {
 				document.getElementById('donate-details').style.display='block';

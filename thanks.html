@@ -27,28 +27,34 @@
 
 		<!-- Header -->
 		<header id="header">
-			<div class="header-title"><a href="en"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
-			<a href="doe" class="header-previous"> &nbsp <i class="fas fa-arrow-left"></i>&nbsp &nbsp  </a>
-			<a href="obrigado" class="header-language"><i class="fas fa-globe-americas"></i> PT &nbsp </a>
+			<div class="header-title"><a href="/"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
+			<a href="donate" class="header-previous"> &nbsp <i class="fas fa-arrow-left"></i>&nbsp &nbsp  </a>			
 			<nav class="header-full">
 				<ul>
-					<li><a href="en">Main</a></li>
-					<li><a href="safehome">Safe Home</a></li>
-					<li><a href="donate" class="current-page">Donate</a></li>
-					<li><a href="obrigado"><i class="fas fa-globe-americas"></i> Portuguese</a></li>
+					<li><a href="index" data-i18n="header.home"></a></li>
+					<li><a href="safehome" data-i18n="header.program"></a></li>
+					<li class="header-donate"><a href="donate" data-i18n="header.donate" class="current-page"></a></li>
 				</ul>
 			</nav>	
+			<nav class="lang-menu">
+				<span class="selected-lang" data-i18n="header.language"></span>
+				<ul>
+					<li><a href="?lang=en" class="en" data-i18n="header.en"></a></li>
+					<li><a href="?lang=pt" class="pt" data-i18n="header.pt"></a></li>
+					<li><a href="?lang=kh" class="kh" data-i18n="header.kh"></a></li>
+				</ul>
+			</nav>
 		</header>
 		
 		<!-- Payment Options -->
 		<section id="quote" class="main style2 dark fullscreen">
 			<div class="content" style="text-align:center;">
-				<h2 style="font-size:50px">Thank you very much for your support! <i class="fas fa-heart"></i></h2>
+				<h2 style="font-size:50px"><span data-i18n="payments.thanks"></span> <i class="fas fa-heart"></i></h2>
 
 				<ul class="thanks">
 					<li><a href="https://facebook.com/Safeplacemission/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="https://instagram.com/safeplacemission/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
 				</ul>
 
 			</div>
@@ -64,14 +70,14 @@
 				<ul class="icons">
 					<li><a href="https://facebook.com/Safeplacemission/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="https://instagram.com/safeplacemission/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
 					<li><a href="mailto:safeplacemission@gmail.com">safeplacemission@gmail.com</a></li>
 				</ul>
 
 				<!-- Menu -->
 				<ul class="menu">
-					<li><a href="assets/SPM_Child_Protection_Policy.pdf">CHILD PROTECTION POLICY</a></li>	
-					<li>&copy; Safe Place Mission</li>					
+					<li><a data-i18n="footer.policy" href="assets/SPM_Child_Protection_Policy.pdf"></a></li>
+					<li data-i18n="footer.organization"></li>					
 					<li>Design: <a href="https://html5up.net">HTML5 UP</a>, <a href="https://apiffer.com">apiffer</a></li>
 				</ul>
 			</div>
@@ -86,6 +92,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/i18n.js"></script>
 
 	</body>
 </html>

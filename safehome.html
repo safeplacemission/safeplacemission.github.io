@@ -33,36 +33,38 @@
 		<meta property="og:description" content="We fight against child abuse and human trafficking in Cambodia."/>
 	</head>
 	<body class="is-preload">
-	
+		
 		<!-- Header -->
 		<header id="header">
-			<div class="header-title"><a href="en"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
-			<a href="javascript:history.back()" class="header-previous"> &nbsp <i class="fas fa-arrow-left"></i>&nbsp &nbsp  </a>
-			<a href="larseguro" class="header-language"><i class="fas fa-globe-americas"></i> PT &nbsp </a>
+			<div class="header-title"><a href="/"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
+			<a href="javascript:history.back()" class="header-previous"> &nbsp <i class="fas fa-arrow-left"></i>&nbsp &nbsp  </a>			
 			<nav class="header-full">
 				<ul>
-					<li><a href="en">Main</a></li>
-					<li><a href="safehome" class="current-page">Safe Home</a></li>
-					<li class="header-donate"><a href="donate">Donate & Sponsor</a></li>
-					<li><a href="larseguro"><i class="fas fa-globe-americas"></i> Português</a></li>
+					<li><a href="index" data-i18n="header.home"></a></li>
+					<li><a href="safehome" data-i18n="header.program" class="current-page"></a></li>
+					<li class="header-donate"><a href="donate" data-i18n="header.donate"></a></li>
 				</ul>
 			</nav>	
-			<a id="float-menu" href="donate"><i class="fas fa-heart my-float"></i>&nbsp Donate & Sponsor</a>
+			<nav class="lang-menu">
+				<span class="selected-lang" data-i18n="header.language"></span>
+				<ul>
+					<li><a href="?lang=en" class="en" data-i18n="header.en"></a></li>
+					<li><a href="?lang=pt" class="pt" data-i18n="header.pt"></a></li>
+					<li><a href="?lang=kh" class="kh" data-i18n="header.kh"></a></li>
+				</ul>
+			</nav>
+			<a id="float-menu" href="donate"><i class="fas fa-heart my-float" data-i18n="index.buttonDonateFloat"></i></a>
 		</header>
 		
 		<!-- Video -->
-		<div class="project-container">
-			<div class="video-wrap">
-				<div class="video-container">
-					<object data="https://www.youtube.com/embed/tltPbh8kLk8?rel=0?version=3&autoplay=1&loop=1&controls=1&showinfo=0&cc_load_policy=1&hl=en&cc_lang_pref=en" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" ></object>
-				</div>
-			</div>				
+		<div class="project-container" id="project-header">
+			<div class="video-wrap"><div class="video-container" data-i18n="safehome.video"></div></div>				
 			
 			<div class="project-info">
-				<header><h2>Safe Home Program</h2>
-				<i style="color: lightgrey"><i class="fas fa-map-marker-alt" style="font-size: 15px; color: darkgrey"></i>&nbsp Kampot, Cambodia</i></header>
-				<p><b>Safe Home</b> is a group home for children located in Kampot, a province of Cambodia. We welcome children from unstructured families who can’t emotionally and financially support, raise, and keep them safe from human trafficking and sexual abuse.</p>
-				<a href="donate" class="button">Donate & Sponsor</a>
+				<header><h2 data-i18n="safehome.title"></h2>
+				<i style="color: lightgrey"><i class="fas fa-map-marker-alt" style="font-size: 15px; color: darkgrey"></i><span data-i18n="safehome.subtitle"></span></i></header>
+				<p data-i18n="safehome.description"></p>
+				<a data-i18n="safehome.button" href="donate" class="button"></a>
 			</div>
 		</div>
 		
@@ -70,14 +72,14 @@
 		<section id="project" class="main style3 primary">
 			<div class="content">
 				<div id="subscribe">
-					<header><h3>Would you like to subscribe for program updates?</h3></header>			
+					<header data-i18n="safehome.signupDescription"></header>			
 					<div id="mc_embed_signup"> <!-- Mailchimp Signup Form -->				
 						<form action="https://gmail.us6.list-manage.com/subscribe/post?u=cad9bdf3ba1fc6612a2a85e7d&amp;id=1fdc1a3556" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div id="mc_embed_signup_scroll">
-								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Add your e-mail address" required>
+								<input placeholder="Email" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required>
 								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cad9bdf3ba1fc6612a2a85e7d_1fdc1a3556" tabindex="-1" value=""></div>
-								<div class="clear"><input type="submit" value="Yes, sure!" name="subscribe" id="mc-embedded-subscribe" class="button style6"></div>
+								<div class="clear"><input value="Subscribe!" type="submit" name="subscribe" id="mc-embedded-subscribe" class="button style6"></div>
 							</div>
 						</form>
 					</div>
@@ -91,19 +93,19 @@
 				</div>
 			
 				<div class="gallery">
-					<header><h3>What does the program cover?</h3></header>
+					<header data-i18n="safehome.infoHeader"></header>
 					
-					<p>We cooperate with NGOs, community leaders and families to rescue children who live in a risky situation to move and be raised at Safe Home until they graduate. Our group home can support up to 30 children.</p>
+					<p data-i18n="safehome.infoDescription1"></p>
 						
-					<article><img class="image fit" src="images/thumbs/01.jpg" title="Alimentação" alt="" /></article>
-					<article><img class="image fit" src="images/thumbs/02.jpg" title="Menino sorrindo" alt="" /></article>
+					<article><img class="image fit" src="images/thumbs/01.jpg" title="Meals" alt="" /></article>
+					<article><img class="image fit" src="images/thumbs/02.jpg" title="Happy kid" alt="" /></article>
 					
-					<p>All children eat <b>healthy food</b> made with love, receive a <b>good education</b> in private school, take extra English language classes and enjoy plenty of playful activities everyday.</p>	
+					<p data-i18n="safehome.infoDescription2"></p>	
 					
-					<article><img class="image fit" src="images/thumbs/03.jpg" title="Música" alt="" /></article>
-					<article><img class="image fit" src="images/thumbs/04.jpg" title="Pintura" alt="" /></article>
+					<article><img class="image fit" src="images/thumbs/03.jpg" title="Entertainment" alt="" /></article>
+					<article><img class="image fit" src="images/thumbs/04.jpg" title="Art Workshop" alt="" /></article>
 					
-					<p>Every house repairs and children activities are organized by missionaries and volunteers, who guarantee all children are raised with <b>love</b> and as in a <b>family</b>.</p>
+					<p data-i18n="safehome.infoDescription3"></p>
 				</div>
 				
 			</div>	
@@ -112,9 +114,9 @@
 		<!-- Donate -->
 		<section id="donate" class="main style2 right fullscreen">
 			<div class="content box style2">
-				<p>Our mission is only possible thanks to many supporters around the world. Join us now.</p>
-				<p><b>Donate to change lives with us.</b></p>
-				<a href="donate" class="button">Donate & Sponsor</a>
+				<p data-i18n="donateDescription1"></p>
+				<p data-i18n="donateDescription2"></p>
+				<a data-i18n="donateButton" href="donate" class="button"></a>
 			</div>
 		</section>
 		
@@ -129,14 +131,14 @@
 				<ul class="icons">
 					<li><a href="https://facebook.com/Safeplacemission/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="https://instagram.com/safeplacemission/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
 					<li><a href="mailto:safeplacemission@gmail.com">safeplacemission@gmail.com</a></li>
 				</ul>
 
 				<!-- Menu -->
 				<ul class="menu">
-					<li><a href="assets/SPM_Child_Protection_Policy.pdf">CHILD PROTECTION POLICY</a></li>
-					<li>&copy; Safe Place Mission</li>					
+					<li><a data-i18n="footer.policy" href="assets/SPM_Child_Protection_Policy.pdf"></a></li>
+					<li data-i18n="footer.organization"></li>					
 					<li>Design: <a href="https://html5up.net">HTML5 UP</a>, <a href="https://apiffer.com">apiffer</a></li>
 				</ul>
 			</div>
@@ -151,25 +153,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<!-- <script src="assets/js/InstagramFeed.min.js"></script>
-		<script>
-			(function(){
-				new InstagramFeed({
-					'username': 'safeplacemission',
-					'container': document.getElementById("instagram-feed"),
-					'display_profile': false,
-					'display_biography': false,
-					'display_gallery': true,
-					'callback': null,
-					'styling': true,
-					'items': 8,
-					'items_per_row': 4,
-					'margin': 0.5,
-					'lazy_load': true,
-					'on_error': console.error
-				});
-			})();
-		</script> -->
+		<script src="assets/js/i18n.js"></script>
 		<script> <!-- Show/Hide Mobile Donate Button -->
 			window.onscroll = function() {scrollFunction()};
 			function scrollFunction() {

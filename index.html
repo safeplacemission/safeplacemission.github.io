@@ -24,41 +24,46 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="robots" content="index, follow" />
 		<meta name="author" content="Safe Place Mission" />
-		<meta name="keywords" content="safe place mission, safe home, ONG, cambodia, camboja, asia, criança, doação, missão, evangelho" />
-		<meta name="description" content="Combatemos o impacto da violência e abusos contra crianças no Camboja."/>
+		<meta name="keywords" content="safe place mission, safe home, NGO, cambodia, asia, child, abuse, sponsor, donate, mission" />
+		<meta name="description" content="We fight against child abuse and human trafficking in Cambodia."/>
 
 		<meta property="og:image" content="https://safeplacemission.com/images/banner.jpg" />
 		<meta property="og:title" content="Safe Place Mission" />
 		<meta property="og:url" content="https://safeplacemission.com" />
-		<meta property="og:description" content="Combatemos o impacto da violência e abusos contra crianças no Camboja."/>
+		<meta property="og:description" content="We fight against child abuse and human trafficking in Cambodia."/>
 	</head>
 	<body class="is-preload">
 		<!-- Header -->
 		<header id="header">
 			<div class="header-title"><a href="/"><img src="images/logo.png"/><h1>Safe Place Mission</h1></a></div>
-			
-			<a href="en" class="header-language"><i class="fas fa-globe-americas"></i> EN &nbsp </a>
 			<nav class="header-full">
 				<ul>
-					<li><a href="#intro" class="current-page">Início</a></li>
-					<li><a href="larseguro">Safe Home</a></li>
-					<li class="header-donate"><a href="doe">Doe & Apadrinhe</a></li>
-					<li><a href="en"><i class="fas fa-globe-americas"></i> English</a></li>
+					<li><a href="#intro" class="current-page" data-i18n="header.home"></a></li>
+					<li><a href="safehome" data-i18n="header.program"></a></li>
+					<li class="header-donate"><a href="donate" data-i18n="header.donate"></a></li>
 				</ul>
 			</nav>	
-			<a id="float-menu" href="doe"><i class="fas fa-heart my-float"></i>&nbsp Doe & Apadrinhe</a>
+			<nav class="lang-menu">
+				<span class="selected-lang" data-i18n="header.language"></span>
+				<ul>
+					<li><a href="?lang=en" class="en" data-i18n="header.en"></a></li>
+					<li><a href="?lang=pt" class="pt" data-i18n="header.pt"></a></li>
+					<li><a href="?lang=kh" class="kh" data-i18n="header.kh"></a></li>
+				</ul>
+			</nav>
+			<a id="float-menu" href="donate"><i class="fas fa-heart my-float" data-i18n="index.buttonDonateFloat"></i></a>
 		</header>
 		
 		<!-- Intro -->
 		<section id="intro" class="main style1 dark fullscreen">
 			<div class="content">
-				<header><h2>Safe Place Mission</h2></header>
-				<p>Resgatar e transformar <strong>vidas</strong> no Camboja</p>
+				<header><h2 data-i18n="index.title"></h2></header>
+				<p data-i18n="index.subtitle"></p>
 				<footer>
-				<ul class="button-list" style="margin: auto;">
-						<li><a href="doe" class="button style1" id="donate-button">Doe & Apadrinhe</a></li>
-						<li><a href="larseguro" class="button style2">Projeto Lar Seguro</a></li>
-						<li><a href="#team" class="button style2">Quem somos</a></li>
+					<ul class="button-list" style="margin: auto;">
+						<li><a href="donate" class="button style1" id="donate-button" data-i18n="index.buttonDonate"></a></li>
+						<li><a href="safehome" class="button style2" data-i18n="index.buttonProgram"></a></li>
+						<li><a href="#team" class="button style2" data-i18n="index.buttonTeam"></a></li>
 					</ul>
 				</footer>
 			</div>
@@ -71,8 +76,8 @@
 				<div class="gallery">
 					<article class="from-left"><img class="image fit" src="images/team.jpg" title="Team" alt="" /></article>
 					<article class="side-description from-left">
-						<p>Somos <b>Quésede Eger</b> e <b>Flávio de Souza</b>, brasileiros e cristãos. Após anos atuando em projetos sociais no Brasil, nos mudamos para o Camboja em 2016 para dedicar nossas vidas no combate à violência e abusos contra crianças.</p>
-						<p>Conheça a nossa <b><a href="#mission">missão</a></b> e <b><a href="#work">projetos</a></b>.</p>
+						<p data-i18n="index.teamDescriptionA"></p>
+						<p data-i18n="index.teamDescriptionB"></p>
 					</article>
 				</div>
 			</div>
@@ -81,12 +86,9 @@
 		<!-- Purpose -->
 		<section id="mission" class="main style2 right fullscreen">
 			<div class="content box style2">
-				<p>O <b>Camboja</b> é um país do Sudeste Asiático que possui uma enorme desestruturação humana e social.
-				Embora o governo realize ações para combater abusos e a prostituição infantil, crianças são vítimas 
-				todos os dias, além de viver sem carinho, educação e um alimento digno.</p> 
-				<p>A <b>Safe Place Mission</b> é uma ONG que atua com famílias em situações de risco para que estas crianças recebam amor, 
-				um futuro próspero, e possam espalhar essa mudança pelo país.</p>
-				<p>Conheça mais sobre os <b><a href="#work">nossos projetos</a></b>.</p>
+				<p data-i18n="index.missionDescriptionA"></p> 
+				<p data-i18n="index.missionDescriptionB"></p>
+				<p data-i18n="index.missionDescriptionC"></p>
 			</div>
 
 		</section>
@@ -95,24 +97,24 @@
 		<section id="work" class="main style3 primary">
 			<div class="content">
 				<div class="gallery">
-					<article id="work-item-image" class="from-left" onclick="location.href='larseguro';">
-						<a href="larseguro" class="image fit"><img src="images/thumbs/01.jpg" title="Safe Home" alt="" /></a>
+					<article id="work-item-image" class="from-left" onclick="location.href='safehome';">
+						<a href="safehome" class="image fit"><img src="images/thumbs/01.jpg" title="Safe Home" alt="" /></a>
 					</article>
-					<article class="side-description from-left" onclick="location.href='larseguro';">
-						<h1><strong>Projeto Safe Home (Lar Seguro)</strong></h1>
-						<p>Resgate, acomodação, alimentação, educação e proteção às crianças cambojanas que vivem em situação de risco. <b><a href="larseguro">Clique aqui e saiba mais</a></b> ou</p>
-						<a href="doe" class="button">Doe & Apadrinhe</a>
+					<article class="side-description from-left" onclick="location.href='safehome';">
+						<h1 data-i18n="index.programTitle"></h1>
+						<p data-i18n="index.programDescription"></p>
+						<a data-i18n="index.programButton" href="donate" class="button"></a>
 					</article>
 				</div>
 				<div id="subscribe">
-					<header><h3>Gostaria de acompanhar as nossas novidades?</h3></header>
+					<header data-i18n="index.signupDescription"></header>
 					<div id="mc_embed_signup"> <!-- Mailchimp Signup Form -->				
 						<form action="https://gmail.us6.list-manage.com/subscribe/post?u=cad9bdf3ba1fc6612a2a85e7d&amp;id=1fdc1a3556" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div id="mc_embed_signup_scroll">
-								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Insira aqui o seu e-mail" required>								
+								<input placeholder="Email" type="email" name="EMAIL" class="email" id="mce-EMAIL" required>								
 								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cad9bdf3ba1fc6612a2a85e7d_1fdc1a3556" tabindex="-1" value=""></div>
-								<div class="clear"><input type="submit" value="Sim, claro!" name="subscribe" id="mc-embedded-subscribe" class="button style6"></div>
+								<div class="clear"><input value="Subscribe" type="submit" name="subscribe" id="mc-embedded-subscribe" class="button style6"></div>
 							</div>
 						</form>
 					</div>
@@ -130,9 +132,9 @@
 		<!-- Donate -->
 		<section id="donate" class="main style2 right fullscreen">
 			<div class="content box style2">
-				<p>Nossa missão só é possivel graças a ajuda de diversos doadores ao redor do mundo, sendo em sua maioria famílias brasileiras.</p>
-				<p><b>Doe para transformar vidas conosco.</b></p>
-				<a href="doe" class="button">Doe & Apadrinhe</a>
+				<p data-i18n="donateDescription1"></p>
+				<p data-i18n="donateDescription2"></p>
+				<a data-i18n="donateButton" href="donate" class="button"></a>
 			</div>
 		</section>
 
@@ -146,14 +148,14 @@
 				<ul class="icons">
 					<li><a href="https://facebook.com/Safeplacemission/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="https://instagram.com/safeplacemission/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+					<li><a href="https://wa.me/85570397508/" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
 					<li><a href="mailto:safeplacemission@gmail.com">safeplacemission@gmail.com</a></li>
 				</ul>
 
 				<!-- Menu -->
 				<ul class="menu">
-					<li><a href="assets/SPM_Child_Protection_Policy.pdf">CHILD PROTECTION POLICY</a></li>				
-					<li>&copy; Safe Place Mission</li>					
+					<li><a data-i18n="footer.policy" href="assets/SPM_Child_Protection_Policy.pdf"></a></li>
+					<li data-i18n="footer.organization"></li>					
 					<li>Design: <a href="https://html5up.net">HTML5 UP</a>, <a href="https://apiffer.com">apiffer</a></li>
 				</ul>
 			</div>
@@ -168,7 +170,8 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script> <!-- Redirects New Users according to Browser Language -->
+		<script src="assets/js/i18n.js"></script>
+		<!-- <script> Redirects New Users according to Browser Language 
 			document.addEventListener("DOMContentLoaded", function(event) { 
 				var userLang = navigator.language || navigator.userLanguage;
 				if (getCookie("first_visit") != "true") {
@@ -193,7 +196,7 @@
 				}
 				return "";
 			}   			
-		</script>
+		</script>-->
 		<script> <!-- Show/Hide Mobile Donate Button -->
 			window.onscroll = function() {scrollFunction()};
 			function scrollFunction() {
