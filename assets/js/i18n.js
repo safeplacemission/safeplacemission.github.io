@@ -274,7 +274,7 @@ const locales = {
 		"signupDescription": "<h3>តើអ្នកចង់ចុះឈ្មោះជាវដើម្បីទទួលបានព្រឹត្តិបត្រព័ត៌មានយើងទេ?</h3>",
 	},
 	"safehome": {
-		"video": "<object data='https://www.youtube.com/embed/tltPbh8kLk8?rel=0?version=3&autoplay=1&loop=1&controls=1&showinfo=0&cc_load_policy=1&hl=kh&cc_lang_pref=kh' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope;' ></object>",
+		"video": "<object data='https://www.youtube.com/embed/EsE5mmZJ1Lg?rel=0?version=3&autoplay=1&loop=1&controls=1&showinfo=0&hl=kh' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope;' ></object>",
 		"title": "កម្មវិធីផ្ទះសុវត្ថិភាព",
 		"subtitle": "&nbsp ខេត្តកំពត ប្រទេសកម្ពុជា",
 		"description": "ផ្ទះសុវត្ថិភាពជាក្រុមផ្ទះមួយសម្រាប់កុមារស្ថិតនៅខេត្តកំពតនៃប្រទេសកម្ពុជា។​ យើងស្វាគមន៍កុមារមកពីគ្រូសារដែលមិនមានរចនាសម្ព័ន្ធដែលមិនមានការគាំទ្រផ្នែកផ្លូវចិត្តនិងហិរញ្ញវត្ថុ។ ចិញ្ចឹម និងថែរក្សាពួកគេឱ្យមានសុវត្ថិភាពពីការជួញដូរមនុស្ស និងការរំលោភបំពានផ្លូវភេទ។",
